@@ -5,6 +5,9 @@ from django.utils.functional import LazyObject  # noqa
 
 
 class LazySettings(LazyObject):
+    '''
+    we need a comment here
+    '''
     def _setup(self, name=None):
         from django.conf import settings  # noqa
         from horizon.conf.default import HORIZON_CONFIG as DEFAULT_CONFIG  # noqa
